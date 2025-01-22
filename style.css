@@ -1,0 +1,674 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eccbea;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #dabbee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+}
+h3{
+  font-size: 180%;
+}
+/* Orbit Container */
+.orbit-container {
+    position: relative;
+    width: 300px; /* Adjust based on image size */
+    height: 300px;
+    margin: 50px auto; /* Center the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* Remove black background */
+}
+
+.center-image {
+    width: 240px; /* Increased width */
+    height: 240px; /* Increased height */
+    border-radius: 60%; /* Keeps the logo circular */
+    z-index: 3; /* Ensure it stays above orbiting text */
+    background: transparent; /* Ensure no background color */
+    object-fit: cover; /* Keep aspect ratio intact */
+    position: relative;
+     /* Adjust vertical alignment if necessary */
+}
+
+/* Orbiting Text */
+.orbiting-text {
+    font-size: 14px;
+    font-weight:inherit;
+    color: darkblue; /* Dark blue color for text */
+    text-shadow: 1px 1px 2px rgba(235, 227, 227, 0.2); /* Subtle shadow for better visibility */
+    animation: orbit 8s linear infinite; /* Smooth orbiting animation */
+}
+
+
+
+/* SVG Styling for Orbit Text */
+.orbit-text {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    animation: rotateOrbit 8s linear infinite; /* Circular motion animation */
+    transform-origin: center;
+}
+
+/* Text Path Styling */
+.orbit-text text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    fill: #1e3a8a; /* Dark Blue color for text */
+    text-transform: uppercase;
+    animation: textGlow 2s infinite alternate ease-in-out; /* Glowing effect */
+    
+}
+
+
+/* Keyframes for Orbiting Effect */
+@keyframes rotateOrbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Keyframes for Glowing Text Effect */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px #60a5fa, 0 0 10px #2563eb, 0 0 15px #d5d7de;
+    }
+    100% {
+        text-shadow: 0 0 10px #3b82f6, 0 0 15px #1d4ed8, 0 0 20px #1e3a8a;
+    }
+}
+
+
+/* Importing the Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(to right, rgba(52, 152, 219, 0.8), rgba(155, 89, 182, 0.8)); /* Match with homepage background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: navGlow 2s infinite alternate ease-in-out; /* Animation for glow effect */
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image {
+    width: 50px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    perspective: 1000px;
+    animation: logoGlow 1s infinite alternate ease-in-out;
+}
+
+/* Keyframes for navigation bar glowing effect */
+@keyframes navGlow {
+    0% {
+        background: linear-gradient(to right, rgba(90, 182, 243, 0.6), rgba(155, 89, 182, 0.6)); /* Darker shade for the starting point */
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.6), 0 0 15px rgba(155, 89, 182, 0.6);
+    }
+    100% {
+        background: linear-gradient(to right, rgba(52, 152, 219, 0.9), rgba(155, 89, 182, 0.9)); /* Lighter shade for the glowing effect */
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.8), 0 0 15px rgba(155, 89, 182, 0.8);
+    }
+}
+
+
+
+/* Navigation links styling */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Mode Toggle Button */
+button#mode-toggle {
+    background: none;
+    border: none;
+    color: #ecf0f1;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Navigation links styling */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Mode Toggle Button */
+button#mode-toggle {
+    background: none;
+    border: none;
+    color: #ecf0f1;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c498b8;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(52, 152, 219, 0.8), rgba(155, 89, 182, 0.8)), 
+        url('https://source.unsplash.com/1920x1080/?technology') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content span {
+    color: #f1c40f;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-button {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    background-color: #ba34db;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.cta-button.organize {
+    background-color: #7411e5;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+.cta-button.organize:hover {
+    background-color: #8029e2;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#events ul {
+    list-style: none;
+    padding: 0;
+}
+
+#events ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #f0f0f0;
+}
+
+body.dark-mode header {
+    background-color: #444;
+}
+
+body.dark-mode nav ul li a {
+    color: #f0f0f0;
+}
+
+body.dark-mode footer {
+    background-color: #444;
+    color: #f0f0f0;
+}
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Mode Toggle Button */
+#mode-toggle {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#mode-toggle:hover {
+    transform: scale(1.2);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+.hackathon-list-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap; /* Cards in one line */
+    background-color: #f4f4f9;
+}
+
+.hackathon-list-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.hackathon-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-width: 250px;
+    max-width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    white-space: normal;
+}
+
+.hackathon-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.hackathon-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.hackathon-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.hackathon-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.hackathon-card button:hover {
+    background-color: #0056b3;
+}
+/* Organize Page Section */
+#organize {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#organize h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#organize p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    color: #3498db;
+    margin: 30px 0 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1abc9c;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+}
+
+/* Form Section */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#community-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#community-form label {
+    font-size: 1rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+#community-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: #fafafa;
+}
+
+#community-form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+.cta-button {
+    padding: 12px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #2874a6;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}

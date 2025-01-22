@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echelon Dev Society</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="C:\Users\satya\Pictures\Mumbai pics\Screenshots\Screenshot 2025-01-21 192840.png" 
+                 alt="Echelon Dev Society Logo" 
+                 class="logo-image">
+            <h3 style="color: aliceblue;">𝑬𝒄𝒉𝒆𝒍𝒐𝒏 𝑫𝒆𝒗 𝑺𝒐𝒄𝒊𝒆𝒕𝒚</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="organize.html">Organize Hackathons</a></li> 
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="mode-toggle">🌙</button>
+    </header>
+    
+    <!-- Hero Banner -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="orbit-container">
+    <!-- Circular Image -->
+    <img src="C:\Users\satya\Pictures\Mumbai pics\Screenshots\Screenshot 2025-01-21 192840.png" 
+         alt="Echelon Logo" class="center-image">
+    
+    <!-- SVG for curved orbiting text -->
+    <svg class="orbit-text" viewBox="0 0 300 300">
+        <path id="circlePath" 
+              d="M 150, 150 m -120, 0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0">
+        </path>
+        <text>
+            <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+                Echelon Dev Society • Hackathon Group of CDGI •
+            </textPath>
+        </text>
+    </svg>
+</div>
+
+            <h1>Welcome to <span>Echelon Dev Society</span></h1>
+            <p>Your gateway to innovation, creativity, and growth in technology.</p>
+            <div class="cta-buttons">
+                <a href="#explore" class="cta-button">Explore Hackathons</a>
+                <a href="organize.html" class="cta-button organize">Organize Hackathons</a>
+</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="https://hack2skill.com/home/img/initiative-svg.svg" alt="">
+        <h2>About Us</h2>
+        <p>Echelon Dev Society is a community of passionate individuals dedicated to fostering technological innovation, creativity, and collaboration.</p>
+    </section>
+    
+    <section id="explore-hackathons">
+        <h2>Explore Hackathons</h2>
+        <p>Welcome to our hackathon collection. Find exciting challenges, events, and more!</p>
+    <div class="scroll-container">
+        <button id="prev" class="scroll-button"></button>
+        <div class="scroll-wrapper" id="scroll-wrapper">
+            <!-- Hackathon details will be dynamically added here -->
+        </div>
+        <div class="hackathon-list-container" id="hackathon-list">
+            <!-- Hackathon cards will be dynamically added here -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Events/Projects Section -->
+    <section id="events">
+        <h2>Our Events & Projects</h2>
+        <ul>
+            <li>🌟 Annual Hackathon: Innovate, code, and create solutions.</li>
+            <li>📚 Workshops: Learn new technologies hands-on.</li>
+            <li>🛠️ Open-Source Projects: Collaborate and contribute to impactful projects.</li>
+        </ul>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <img src="C:\Users\satya\Pictures\Mumbai pics\Screenshot 2025-01-21 175841.png" alt="">
+        <h2>Meet Our Team</h2>
+        <p>Our team consists of passionate developers, designers, and organizers working together to create a thriving tech community.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>Connect with us:</p>
+        <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>© 2025 Echelon Dev Society. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
